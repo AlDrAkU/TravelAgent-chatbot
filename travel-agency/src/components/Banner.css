@@ -1,13 +1,36 @@
 .banner {
-    background:  #3498db;
+    background: #3498db;
     color: #fff;
     text-align: center;
     padding: 50px;
-}
-.banner h1{
+  }
+  
+  .banner h1 {
     font-size: 2.5em;
-}
-.banner p{
+    background: #e74c3c; /* Red background color */
+    padding: 10px; /* Add padding to the title */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Ensure the background only covers the title's width */
+  }
+  
+  .banner p {
     font-size: 1.2em;
     margin-top: 20px;
-}
+  }
+  
+  .menu {
+    background: #333;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .menu a.active {
+    font-weight: bold;
+  }

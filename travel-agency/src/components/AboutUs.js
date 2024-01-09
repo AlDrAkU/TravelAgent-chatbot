@@ -13,4 +13,4 @@ const AboutUsPage = () => {
 
 
 
-export default PartnersPage;
+export default AboutUsPage;
