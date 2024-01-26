@@ -16,6 +16,7 @@ script1.async = true;
 
 const script2 = document.createElement('script');
 script2.src = 'https://mediafiles.botpress.cloud/58d1bd69-bfea-4f0d-bec7-ecb277532bda/webchat/config.js';
+
 script2.defer = true;
 
 document.head.appendChild(script1);

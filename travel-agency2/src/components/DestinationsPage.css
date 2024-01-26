@@ -1,0 +1,30 @@
+
+  
+  .tile-detail {
+    display: flex;
+    margin-bottom: 20px; 
+  }
+  
+  .tile-detail-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tile-detail-image-container {
+    margin-right: 20px; 
+  }
+  
+  .tile-detail-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-content {
+    flex-grow: 1;
+  }
+  
+  .title-detail-heading {
+    margin-bottom: 5px; 
+  }
+  
+  
