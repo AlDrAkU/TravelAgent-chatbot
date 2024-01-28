@@ -54,7 +54,6 @@ function App() {
             <Route path="/about" element={<AboutUsPage />} />
           </Routes>
         </div>
-        <div id="chatbot-container"></div>
       </div>
     </Router>
   );
