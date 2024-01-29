@@ -29,7 +29,7 @@ script2.innerHTML = `
         "themeName": "prism",
         "botName": "Dan",
         "frontendVersion": "v1",
-        "useSessionStorage": true,
+        "useSessionStorage": false,
         "theme": "prism",
         "themeColor": "#2563eb",
         "resetOnPageReload": true,
