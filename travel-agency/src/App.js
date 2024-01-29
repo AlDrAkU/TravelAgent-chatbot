@@ -13,14 +13,32 @@ import './components/Banner.css';
 const script1 = document.createElement('script');
 script1.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
 script1.async = true;
-
-const script2 = document.createElement('script');
-script2.src = 'https://mediafiles.botpress.cloud/58d1bd69-bfea-4f0d-bec7-ecb277532bda/webchat/config.js';
-
-script2.defer = true;
-
 document.head.appendChild(script1);
-document.head.appendChild(script2);
+script1.onload = () => {
+const script2 = document.createElement('script');
+script2.innerHTML = `
+      window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with Dan",
+        "botConversationDescription": "The friendliest travel agent.",
+        "botId": "58d1bd69-bfea-4f0d-bec7-ecb277532bda",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "58d1bd69-bfea-4f0d-bec7-ecb277532bda",
+        "webhookId": "89f2594e-bdcd-4e56-96d5-1bc71c9fe57c",
+        "lazySocket": true,
+        "themeName": "prism",
+        "botName": "Dan",
+        "frontendVersion": "v1",
+        "useSessionStorage": true,
+        "theme": "prism",
+        "themeColor": "#2563eb",
+        "resetOnPageReload": true,
+        "clearOnReload": true,
+        "enableConversationDeletion": true,
+      });
+    `;
+script2.defer = true;
+document.head.appendChild(script2);}
 
 function App() {
 
